@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+/* src/App.css */
+
+/* Keep your existing Ken Burns animation */
+@keyframes kenburns-effect {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+  100% {
+    transform: scale(1.15) translate(-2%, 2%);
+  }
+}
+
+.slide-background-animate {
+  animation: kenburns-effect 8s ease-out infinite alternate-reverse;
+}
+
+/* --- ADD THIS NEW CSS FOR SWIPER ARROWS --- */
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black background */
+  padding: 20px;
+  border-radius: 50%; /* Make them circular */
+  color: #ffffff !important; /* Make the arrow icon white */
+  transform: scale(0.7); /* Make them a bit smaller */
+  transition: background-color 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgba(0, 0, 0, 0.6); /* Darker on hover */
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px !important; /* Adjust the size of the arrow icon itself */
+  font-weight: 900 !important;
+}

@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+/* src/App.css */
+
+/* --- Ken Burns Effect for Image Slides --- */
+@keyframes kenburns-effect {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.1); }
+}
+.slide-background-animate {
+  animation: kenburns-effect 8s ease-out infinite alternate-reverse;
+}
+
+/* --- Animated Gradient Background for Newsletter --- */
+@keyframes gradient-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.animated-gradient {
+  background: linear-gradient(-45deg, #00A39C, #00629B, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient-animation 15s ease infinite;
+}
+
+/* --- Animated Gradient Text for Stats --- */
+.gradient-text {
+  background: linear-gradient(90deg, #00A39C, #00629B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
