@@ -1,48 +1,29 @@
 // src/data.js
-import { FaUsers, FaCalendarAlt, FaLightbulb, FaNetworkWired, FaTools, FaBriefcase } from 'react-icons/fa';
+import { FaUsers, FaCalendarAlt, FaLightbulb, FaNetworkWired, FaTools, FaBriefcase, FaHandshake } from 'react-icons/fa';
 
-export const statsData = [
-  { id: 1, icon: FaUsers, number: '50+', label: 'Active Members' },
-  { id: 2, icon: FaCalendarAlt, number: '15+', label: 'Events Hosted' },
-  { id: 3, icon: FaLightbulb, number: '5+', label: 'Projects Completed' },
-];
-
-export const benefitsData = [
-  { icon: FaNetworkWired, title: 'Professional Networking', description: 'Connect with industry experts, academics, and peers from around the world.' },
-  { icon: FaTools, title: 'Hands-On Workshops', description: 'Gain practical skills in PCB design, programming, and automation tools.' },
-  { icon: FaBriefcase, title: 'Career Development', description: 'Access exclusive job boards, resume workshops, and industry tours.' },
-];
-
-export const teamData = [
-  { name: 'Your Name', position: 'Chapter Chair', img: 'https://i.pravatar.cc/150?img=68' },
-  { name: 'Friend Name 1', position: 'Vice Chair', img: 'https://i.pravatar.cc/150?img=60' },
-  { name: 'Friend Name 2', position: 'Treasurer', img: 'https://i.pravatar.cc/150?img=32' },
-  { name: 'Friend Name 3', position: 'Secretary', img: 'https://i.pravatar.cc/150?img=20' },
-];
-
-export const upcomingEvents = [
-    { title: 'Advanced PLC Programming', date: 'October 25, 2024', description: 'Dive deep into ladder logic and structured text with industry-grade PLCs.' },
-    { title: 'Industry Tour: Ceylon Electricity Board', date: 'November 10, 2024', description: 'An exclusive look at the national grid control center.' },
-];
-
-export const pastEvents = [
-    { title: 'Workshop on Altium Designer', date: 'May 15, 2024', description: 'A successful hands-on session on professional PCB design.' },
-    { title: 'Guest Lecture: Smart Grid Tech', date: 'April 02, 2024', description: 'Insightful talk by an engineer from Siemens.' },
-];
-
-export const projectsData = [
-  { title: 'Automated Hydroponics System', img: 'https://images.unsplash.com/photo-1617192433045-361414d9a2d3?w=500', description: 'An IoT-based system to monitor and control nutrient levels for plant growth.' },
-  { title: 'Grid-Tied Solar Inverter', img: 'https://images.unsplash.com/photo-1508558936510-0af1e3454aa6?w=500', description: 'A custom-designed inverter to feed solar power back into the local grid.' },
-];
-
-export const testimonialsData = [
-  { quote: "Joining IAS was the best decision of my university life. The industry connections are invaluable.", name: "Kavindu Perera", major: "Electrical Engineering, 4th Year", img: 'https://i.pravatar.cc/150?img=11' },
-  { quote: "The hands-on workshops gave me practical skills that I used to land my internship.", name: "Fathima Rilwan", major: "Computer Engineering, 3rd Year", img: 'https://i.pravatar.cc/150?img=3' },
-];
 
 // src/data.js
 
-// Add this new array for the hero slideshow
+// ... (keep all your existing data like teamData, statsData, etc.)
+
+// NEW: Add data for the Faculty Advisor
+export const facultyAdvisorData = {
+  name: 'Ms. D.P. Jayathunga',
+  title: 'Faculty Advisor, IEEE Student Branch',
+  department: 'Department of Computer Science and Informatics',
+  img: 'https://i.pravatar.cc/150?img=53', // Replace with your advisor's actual photo
+  bio: 'With over 15 years of experience in power systems and renewable energy, our advisor provides invaluable guidance and mentorship, bridging the gap between academic theory and real-world industry application.'
+};
+
+// NEW: Add data for the Junior Committee
+export const juniorCommitteeData = [
+  { name: 'Junior Member 1', position: 'Event Coordinator', img: 'https://i.pravatar.cc/150?img=1' },
+  { name: 'Junior Member 2', position: 'Social Media Lead', img: 'https://i.pravatar.cc/150?img=2' },
+  { name: 'Junior Member 3', position: 'Content Creator', img: 'https://i.pravatar.cc/150?img=4' },
+  { name: 'Junior Member 4', position: 'Technical Lead', img: 'https://i.pravatar.cc/150?img=5' },
+];
+// --- HERO SLIDES ---
+// Using the advanced version that supports both video and images
 export const heroSlides = [
   {
     image: "https://images.unsplash.com/photo-1542744095-291d1f67b221?q=80&w=1470", // A professional team meeting
@@ -61,4 +42,204 @@ export const heroSlides = [
   }
 ];
 
-// ... keep your other data like teamData, eventsData, etc. below
+// --- STATS SECTION ---
+// CORRECTED: The `number` property is now a pure number for the animation to work correctly.
+export const statsData = [
+  { id: 1, icon: FaUsers, number: 50, label: 'Active Members' },
+  { id: 2, icon: FaCalendarAlt, number: 15, label: 'Events Hosted' },
+  { id: 3, icon: FaLightbulb, number: 5, label: 'Projects Completed' },
+  { id: 4, icon: FaHandshake, number: 10, label: 'Industry Partners' } // ADDED: New stat
+];
+
+// --- WHY JOIN (BENEFITS) SECTION ---
+export const benefitsData = [
+  { icon: FaNetworkWired, title: 'Professional Networking', description: 'Connect with industry experts, academics, and peers from around the world.' },
+  { icon: FaTools, title: 'Hands-On Workshops', description: 'Gain practical skills in PCB design, programming, and automation tools.' },
+  { icon: FaBriefcase, title: 'Career Development', description: 'Access exclusive job boards, resume workshops, and industry tours.' },
+];
+
+// --- TEAM & ADVISOR SECTION ---
+export const teamData = [
+  { name: 'Your Name', position: 'Chapter Chair', img: 'https://i.pravatar.cc/150?img=68', linkedin: 'https://linkedin.com' },
+  { name: 'Friend Name 1', position: 'Vice Chair', img: 'https://i.pravatar.cc/150?img=60', linkedin: 'https://linkedin.com' },
+  { name: 'Friend Name 2', position: 'Treasurer', img: 'https://i.pravatar.cc/150?img=32', linkedin: 'https://linkedin.com' },
+  { name: 'Friend Name 3', position: 'Secretary', img: 'https://i.pravatar.cc/150?img=20', linkedin: 'https://linkedin.com' },
+];
+
+// src/data.js
+
+// ... (keep your other data like heroSlides, statsData, etc.)
+
+// --- EVENTS SECTION (UPDATED) ---
+export const upcomingEvents = [
+    { 
+        title: 'Advanced PLC Programming', 
+        date: 'October 25, 2024', 
+        description: 'Dive deep into ladder logic and structured text with industry-grade PLCs in this intensive workshop.',
+        category: 'Workshop',
+        image: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=147'
+    },
+    { 
+        title: 'Industry Tour: Ceylon Electricity Board', 
+        date: 'November 10, 2024', 
+        description: 'An exclusive look at the national grid control center and its modern SCADA systems.',
+        category: 'Industry Tour',
+        image: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1470'
+    },
+     { 
+        title: 'Industry Tour: Ceylon Electricity Board', 
+        date: 'November 10, 2024', 
+        description: 'An exclusive look at the national grid control center and its modern SCADA systems.',
+        category: 'Industry Tour',
+        image: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1470'
+    },
+     { 
+        title: 'Industry Tour: Ceylon Electricity Board', 
+        date: 'November 10, 2024', 
+        description: 'An exclusive look at the national grid control center and its modern SCADA systems.',
+        category: 'Industry Tour',
+        image: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1470'
+    },
+     { 
+        title: 'Industry Tour: Ceylon Electricity Board', 
+        date: 'November 10, 2024', 
+        description: 'An exclusive look at the national grid control center and its modern SCADA systems.',
+        category: 'Industry Tour',
+        image: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1470'
+    },
+     { 
+        title: 'Industry Tour: Ceylon Electricity Board', 
+        date: 'November 10, 2024', 
+        description: 'An exclusive look at the national grid control center and its modern SCADA systems.',
+        category: 'Industry Tour',
+        image: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1470'
+    },
+];
+
+export const pastEvents = [
+    { 
+        title: 'Workshop on Altium Designer', 
+        date: 'May 15, 2024', 
+        shortDescription: 'A successful hands-on session on professional PCB design.',
+        fullDescription: "Our comprehensive Altium Designer workshop guided over 40 students through the entire PCB design process, from schematic capture to generating Gerber files for manufacturing. Participants praised the hands-on approach and the expertise of our instructors.",
+        category: 'Workshop',
+        image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1632",
+        images: [
+            "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1632",
+            "https://images.unsplash.com/photo-1606903351912-336338e3e46c?q=80&w=1470",
+            "https://images.unsplash.com/photo-1579762715118-a6f3d4576365?q=80&w=1374"
+        ]
+    }, 
+    { 
+        title: 'Guest Lecture: Smart Grid Tech', 
+        date: 'April 02, 2024', 
+        shortDescription: 'Insightful talk by a senior engineer from Siemens.',
+        fullDescription: "We were honored to host a senior power systems engineer from Siemens for an enlightening lecture on the future of Smart Grid technology. The session covered topics like grid automation, IoT integration, and cybersecurity, followed by an engaging Q&A session.",
+        category: 'Guest Lecture',
+        image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1470",
+        images: [
+            "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1470",
+            "https://images.unsplash.com/photo-1496065187959-7f07b8353c55?q=80&w=1470",
+            "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1470"
+        ]
+    },
+    { 
+        title: 'Guest Lecture: Smart Grid Tech', 
+        date: 'April 02, 2024', 
+        shortDescription: 'Insightful talk by a senior engineer from Siemens.',
+        fullDescription: "We were honored to host a senior power systems engineer from Siemens for an enlightening lecture on the future of Smart Grid technology. The session covered topics like grid automation, IoT integration, and cybersecurity, followed by an engaging Q&A session.",
+        category: 'Guest Lecture',
+        image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1470",
+        images: [
+            "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1470",
+            "https://images.unsplash.com/photo-1496065187959-7f07b8353c55?q=80&w=1470",
+            "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1470"
+        ]
+    },
+     { 
+        title: 'Guest Lecture: Smart Grid Tech', 
+        date: 'April 02, 2024', 
+        shortDescription: 'Insightful talk by a senior engineer from Siemens.',
+        fullDescription: "We were honored to host a senior power systems engineer from Siemens for an enlightening lecture on the future of Smart Grid technology. The session covered topics like grid automation, IoT integration, and cybersecurity, followed by an engaging Q&A session.",
+        category: 'Guest Lecture',
+        image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1470",
+        images: [
+            "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1470",
+            "https://images.unsplash.com/photo-1496065187959-7f07b8353c55?q=80&w=1470",
+            "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1470"
+        ]
+    },
+     { 
+        title: 'Guest Lecture: Smart Grid Tech', 
+        date: 'April 02, 2024', 
+        shortDescription: 'Insightful talk by a senior engineer from Siemens.',
+        fullDescription: "We were honored to host a senior power systems engineer from Siemens for an enlightening lecture on the future of Smart Grid technology. The session covered topics like grid automation, IoT integration, and cybersecurity, followed by an engaging Q&A session.",
+        category: 'Guest Lecture',
+        image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1470",
+        images: [
+            "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1470",
+            "https://images.unsplash.com/photo-1496065187959-7f07b8353c55?q=80&w=1470",
+            "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1470"
+        ]
+    },
+     { 
+        title: 'Guest Lecture: Smart Grid Tech', 
+        date: 'April 02, 2024', 
+        shortDescription: 'Insightful talk by a senior engineer from Siemens.',
+        fullDescription: "We were honored to host a senior power systems engineer from Siemens for an enlightening lecture on the future of Smart Grid technology. The session covered topics like grid automation, IoT integration, and cybersecurity, followed by an engaging Q&A session.",
+        category: 'Guest Lecture',
+        image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1470",
+        images: [
+            "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1470",
+            "https://images.unsplash.com/photo-1496065187959-7f07b8353c55?q=80&w=1470",
+            "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1470"
+        ]
+    },
+  
+];
+
+// src/data.js
+
+// ... (keep all your other data arrays)
+
+// NEW & EXPANDED: projectsData with tech stack and links
+export const projectsData = [
+  { 
+    title: 'Automated Hydroponics System', 
+    img: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1632',
+    description: 'An IoT-based system to monitor and control nutrient levels, pH, and light cycles for efficient plant growth, all controlled via a web dashboard.',
+    techStack: ['Raspberry Pi', 'Python', 'React', 'Firebase'],
+    link: 'https://github.com' // Replace with your actual project link
+  },
+  { 
+    title: 'Grid-Tied Solar Inverter Design', 
+    img: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1632',
+    description: 'A custom-designed and simulated pure sine wave inverter to safely feed solar power back into the local grid, focusing on efficiency and harmonic distortion reduction.',
+    techStack: ['MATLAB', 'Simulink', 'Power Electronics', 'C++'],
+    link: 'https://github.com'
+  },
+  {
+    title: 'Object-Tracking Robotic Arm',
+    img: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1632',
+    description: 'A 4-axis robotic arm that uses computer vision via a webcam to detect, track, and interact with specific objects based on their color and shape.',
+    techStack: ['OpenCV', 'Python', 'Arduino', '3D Printing'],
+    link: 'https://github.com'
+  }
+];
+
+
+// --- TESTIMONIALS SECTION (NEW) ---
+export const testimonialsData = [
+  { 
+    quote: "Joining IAS was the best decision of my university life. The industry connections I made at a networking event led directly to my internship.", 
+    name: "Kavindu Perera", 
+    major: "Electrical Engineering, 4th Year", 
+    img: 'https://i.pravatar.cc/150?img=11' 
+  },
+  { 
+    quote: "The hands-on workshops gave me practical skills that classes don't teach. I used what I learned in the Python bootcamp to automate my final year project.", 
+    name: "Fathima Rilwan", 
+    major: "Computer Engineering, 3rd Year", 
+    img: 'https://i.pravatar.cc/150?img=3' 
+  },
+];
