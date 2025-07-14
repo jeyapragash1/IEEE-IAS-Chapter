@@ -19,8 +19,7 @@ const Footer = () => {
           <img
             src={iasLogo}
             alt="IEEE IAS Chapter Logo"
-            className="h-20 w-auto rounded-lg transition-all duration-300 hover:scale-105 mb-4 mx-auto md:mx-0"
-          />
+            className="h-35 w-auto rounded-lg transition-all duration-300 hover:scale-105"/>         
           <h3 className="font-bold text-xl mb-2">Official Affiliation</h3>
           <p className="text-sm text-[#555555]">An official student branch chapter of the</p>
           <p className="font-bold text-[#00A39C]">IEEE Industry Applications Society</p>

@@ -1,8 +1,20 @@
 @import "tailwindcss";
 
-/* src/App.css */
+/**
+ * =================================================================
+ * Main Stylesheet for IEEE-IAS-Chapter Website
+ * =================================================================
+ * This file contains all custom CSS and animations for the site.
+ * It works alongside the Tailwind CSS utility classes.
+ */
 
-/* Keep your existing Ken Burns animation */
+/* This is the directive for your Vite + Tailwind setup. Do not change. */
+@import "tailwindcss";
+
+
+/* === 1. GLOBAL ANIMATION DEFINITIONS === */
+
+/* Ken Burns Effect (for Hero Slider Images) */
 @keyframes kenburns-effect {
   0% {
     transform: scale(1) translate(0, 0);
@@ -16,24 +28,55 @@
   animation: kenburns-effect 8s ease-out infinite alternate-reverse;
 }
 
-/* --- ADD THIS NEW CSS FOR SWIPER ARROWS --- */
-.swiper-button-next,
-.swiper-button-prev {
-  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black background */
-  padding: 20px;
-  border-radius: 50%; /* Make them circular */
-  color: #ffffff !important; /* Make the arrow icon white */
-  transform: scale(0.7); /* Make them a bit smaller */
-  transition: background-color 0.3s ease;
+/* Animated Gradient Background (for Newsletter Section) */
+@keyframes gradient-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  background-color: rgba(0, 0, 0, 0.6); /* Darker on hover */
+.animated-gradient {
+  background: linear-gradient(-45deg, #00A39C, #00629B, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient-animation 15s ease infinite;
 }
 
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  font-size: 20px !important; /* Adjust the size of the arrow icon itself */
-  font-weight: 900 !important;
+
+/* === 2. COMPONENT-SPECIFIC STYLES === */
+
+/* Gradient Text (for Stats Section) */
+.gradient-text {
+  background: linear-gradient(90deg, #00A39C, #00629B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+/* Custom Navigation Buttons (for Testimonials Slider) */
+.testimonial-swiper-button {
+  background-color: white;
+  border: 1px solid #e2e8f0; /* a light gray border */
+  border-radius: 9999px; /* circular */
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555555;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.testimonial-swiper-button:hover {
+  background-color: #00A39C; /* The green color */
+  color: white;
+  transform: scale(1.1);
+}
+
+/* This class is added by Swiper when a button is disabled */
+.swiper-button-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: scale(1);
 }

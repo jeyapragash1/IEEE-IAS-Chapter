@@ -242,4 +242,17 @@ export const testimonialsData = [
     major: "Computer Engineering, 3rd Year", 
     img: 'https://i.pravatar.cc/150?img=3' 
   },
+   { 
+    quote: "Joining IAS was the best decision of my university life. The industry connections I made at a networking event led directly to my internship.", 
+    name: "Kavindu Perera", 
+    major: "Electrical Engineering, 4th Year", 
+    img: 'https://i.pravatar.cc/150?img=11' 
+  },
+  { 
+    quote: "The hands-on workshops gave me practical skills that classes don't teach. I used what I learned in the Python bootcamp to automate my final year project.", 
+    name: "Fathima Rilwan", 
+    major: "Computer Engineering, 3rd Year", 
+    img: 'https://i.pravatar.cc/150?img=3' 
+  },
 ];
+
