@@ -1,8 +1,23 @@
 // src/data.js
 import { FaUsers, FaCalendarAlt, FaLightbulb, FaNetworkWired, FaTools, FaBriefcase, FaHandshake } from 'react-icons/fa';
 
+import kasunThilakarathnaImg from './assets/images/Members/Kasun L.png';
+import fathimaRisnaImg from './assets/images/Members/Risna Sec.png';
+import naveenDilimikaImg from './assets/images/Members/Naveen Tre.png';
+import kishoJeyapragashImg from './assets/images/Members/jp web.png';
+import sayuruBuddhimaImg from './assets/images/Members/Sayaru MD Head.png';
+// Note: You will need to find and add images for the commented-out members
+// import viniduKumarasiriImg from './assets/images/Members/vinidu-kumarasiri.jpg';
+// import tashiyaTishaniImg from './assets/images/Members/tashiya-tishani.jpg';
 
-// src/data.js
+// Committee Members
+import nadunNimsaraImg from './assets/images/Members/nimsara VC juni.png';
+import chamandiChandrasiriImg from './assets/images/Members/chandrasiri ASec.png';
+import tharulJayasundaraImg from './assets/images/Members/JAYASUNDARA J.A.D.T.D.W.jpeg';
+import hansikaParamiImg from './assets/images/Members/Hansika E mem ju.png';
+// import gimhanaMadushankaImg from './assets/images/Members/gimhana-madushanka.jpg';
+// import ravinduTharushaImg from './assets/images/Members/ravindu-tharusha.jpg';
+
 
 // ... (keep all your existing data like teamData, statsData, etc.)
 
@@ -15,13 +30,27 @@ export const facultyAdvisorData = {
   bio: 'With over 15 years of experience in power systems and renewable energy, our advisor provides invaluable guidance and mentorship, bridging the gap between academic theory and real-world industry application.'
 };
 
-// NEW: Add data for the Junior Committee
-export const juniorCommitteeData = [
-  { name: 'Junior Member 1', position: 'Event Coordinator', img: 'https://i.pravatar.cc/150?img=1' },
-  { name: 'Junior Member 2', position: 'Social Media Lead', img: 'https://i.pravatar.cc/150?img=2' },
-  { name: 'Junior Member 3', position: 'Content Creator', img: 'https://i.pravatar.cc/150?img=4' },
-  { name: 'Junior Member 4', position: 'Technical Lead', img: 'https://i.pravatar.cc/150?img=5' },
+// --- 4. TEAM & ADVISOR SECTION ---
+// Your official committee data, structured correctly.
+export const seniorCommitteeData = [
+  { name: 'Kasun Thilakarathna', position: 'Chairperson', img: kasunThilakarathnaImg },
+  { name: 'Fathima Risna', position: 'Secretary', img: fathimaRisnaImg },
+  { name: 'Naveen Dilimika', position: 'Treasurer', img: naveenDilimikaImg },
+  { name: 'Kisho Jeyapragash', position: 'Webmaster', img: kishoJeyapragashImg },
+  { name: 'Sayuru Buddhima', position: 'MD Head', img: sayuruBuddhimaImg },
+  // { name: 'Vinidu Kumarasiri', position: 'PV Head', img: ... },
+  // { name: 'Tashiya Tishani', position: 'Editorial Head', img: ... },
 ];
+
+export const committeeMembersData = [
+  { name: 'Nadun Nimsara', position: 'Vice Chairperson', img: nadunNimsaraImg },
+  { name: 'Chamandi Chandrasiri', position: 'Assistant Secretary', img: chamandiChandrasiriImg },
+  { name: 'Tharul Jayasundara', position: 'PV Member', img: tharulJayasundaraImg },
+  { name: 'Hansika Parami', position: 'Editorial Member', img: hansikaParamiImg },
+  // { name: 'Gimhana Madushanka', position: 'PV Member', img: ... },
+  // { name: 'Ravindu Tharusha', position: 'Editorial Member', img: ... },
+];
+
 // --- HERO SLIDES ---
 // Using the advanced version that supports both video and images
 export const heroSlides = [

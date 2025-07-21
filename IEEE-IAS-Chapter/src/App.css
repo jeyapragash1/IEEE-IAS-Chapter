@@ -64,3 +64,15 @@
   cursor: not-allowed;
   transform: scale(1);
 }
+
+/* src/App.css */
+
+/* --- KEEP ALL YOUR EXISTING CSS ABOVE THIS LINE --- */
+
+/* --- NEW STYLE FOR THE TEAM SECTION BACKGROUND --- */
+.dark-mesh-background {
+  background-color: #0c1427; /* Dark navy blue */
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.1) 1px, transparent 0);
+  background-size: 20px 20px;
+}
