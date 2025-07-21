@@ -35,13 +35,11 @@
 /* src/App.css */
 
 /* --- KEEP ALL YOUR EXISTING CSS ABOVE THIS LINE --- */
-
-
-/* --- NEW STYLES FOR TESTIMONIAL SLIDER NAVIGATION --- */
+/* Custom Navigation Buttons (for Testimonials Slider) */
 .testimonial-swiper-button {
   background-color: white;
-  border: 1px solid #e2e8f0; /* a light gray border */
-  border-radius: 9999px; /* circular */
+  border: 1px solid #e2e8f0;
+  border-radius: 9999px;
   width: 44px;
   height: 44px;
   display: flex;
@@ -51,12 +49,18 @@
   transition: all 0.3s ease;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
-
 .testimonial-swiper-button:hover {
-  background-color: #00A39C; /* The green color */
+  background-color: #00A39C;
   color: white;
   transform: scale(1.1);
 }
+.swiper-button-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: scale(1);
+}
+
+
 
 /* This class is added by Swiper when a button is disabled (e.g., at the start or end) */
 .swiper-button-disabled {

@@ -3,13 +3,13 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaQuoteLeft, FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
-// 1. IMPORT THE AUTOPLAY MODULE
+// Import Swiper components and modules
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Autoplay } from 'swiper/modules'; // Added Autoplay here
+import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-// Import your data
+// Import your new, corrected data
 import { testimonialsData } from '../data';
 
 const Testimonials = () => {
@@ -36,20 +36,18 @@ const Testimonials = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <Swiper
-            // 2. ADD THE AUTOPLAY MODULE TO THE SWIPER INSTANCE
-            modules={[Navigation, Autoplay]} // Added Autoplay here
+            modules={[Navigation, Autoplay]}
             spaceBetween={50}
             slidesPerView={1}
-            loop={true} // Loop is important for seamless autoplay
+            loop={true}
             navigation={{
               nextEl: '.swiper-button-next-custom',
               prevEl: '.swiper-button-prev-custom',
             }}
-            // 3. CONFIGURE THE AUTOPLAY BEHAVIOR
             autoplay={{
-              delay: 4000, // Time in ms between slides (4 seconds)
-              disableOnInteraction: false, // Autoplay will resume after user interaction (like clicking arrows)
-              pauseOnMouseEnter: true, // Autoplay will pause when the user hovers over the slider
+              delay: 5000, // Slides change every 5 seconds
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true,
             }}
             className="relative"
           >
@@ -63,7 +61,7 @@ const Testimonials = () => {
                   >
                     <FaQuoteLeft className="text-[#00A39C] text-5xl mx-auto mb-6" />
                     
-                    <p className="text-lg md:text-xl italic text-[#555555] leading-relaxed mb-8 min-h-[100px]">
+                    <p className="text-lg md:text-xl italic text-[#555555] leading-relaxed mb-8 min-h-[120px]">
                       "{testimonial.quote}"
                     </p>
                     
@@ -81,7 +79,7 @@ const Testimonials = () => {
               </SwiperSlide>
             ))}
             
-            {/* Custom Navigation Buttons (no changes needed here) */}
+            {/* Custom Navigation Buttons */}
             <div className="flex justify-center items-center gap-4 mt-8">
               <button className="swiper-button-prev-custom testimonial-swiper-button">
                 <FaArrowLeft />

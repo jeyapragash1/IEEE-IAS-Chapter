@@ -256,32 +256,35 @@ export const projectsData = [
   }
 ];
 
-
-// --- TESTIMONIALS SECTION (NEW) ---
 export const testimonialsData = [
   { 
-    quote: "Joining IAS was the best decision of my university life. The industry connections I made at a networking event led directly to my internship.", 
-    name: "Kavindu Perera", 
-    major: "Electrical Engineering, 4th Year", 
-    img: 'https://i.pravatar.cc/150?img=11' 
+    quote: "Leading this chapter has been an incredible experience. IAS provides a unique platform to not only learn technically but also to grow as a leader and manage a team.", 
+    name: "Kasun Thilakarathna", 
+    major: "Chairperson", 
+    img: kasunThilakarathnaImg 
   },
   { 
-    quote: "The hands-on workshops gave me practical skills that classes don't teach. I used what I learned in the Python bootcamp to automate my final year project.", 
-    name: "Fathima Rilwan", 
-    major: "Computer Engineering, 3rd Year", 
-    img: 'https://i.pravatar.cc/150?img=3' 
-  },
-   { 
-    quote: "Joining IAS was the best decision of my university life. The industry connections I made at a networking event led directly to my internship.", 
-    name: "Kavindu Perera", 
-    major: "Electrical Engineering, 4th Year", 
-    img: 'https://i.pravatar.cc/150?img=11' 
+    quote: "The organizational skills I've gained as Secretary are invaluable. Coordinating events and managing communications has prepared me for the professional world.", 
+    name: "Fathima Risna", 
+    major: "Secretary", 
+    img: fathimaRisnaImg 
   },
   { 
-    quote: "The hands-on workshops gave me practical skills that classes don't teach. I used what I learned in the Python bootcamp to automate my final year project.", 
-    name: "Fathima Rilwan", 
-    major: "Computer Engineering, 3rd Year", 
-    img: 'https://i.pravatar.cc/150?img=3' 
+    quote: "Managing the chapter's budget taught me financial responsibility and resource allocation, skills that are crucial for any engineering project.", 
+    name: "Naveen Dilimika", 
+    major: "Treasurer", 
+    img: naveenDilimikaImg
+  },
+  { 
+    quote: "Building and maintaining our official website was a fantastic real-world project. I applied my web development skills to create something impactful for our community.", 
+    name: "Kisho Jeyapragash", 
+    major: "Webmaster", 
+    img: kishoJeyapragashImg 
+  },
+  { 
+    quote: "As MD Head, I learned how to market our events and grow our brand. It's amazing to see our membership increase because of the outreach we do.", 
+    name: "Sayuru Buddhima", 
+    major: "MD Head", 
+    img: sayuruBuddhimaImg 
   },
 ];
-

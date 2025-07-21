@@ -20,10 +20,10 @@ function App() {
         <Stats />
         <About />
         <WhyJoin />
+        <Testimonials />
         <Events />
         <Team />
         <Projects />
-        <Testimonials />
         <Newsletter />
       </main>
       <Footer />
