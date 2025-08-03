@@ -1,6 +1,6 @@
 // src/components/Footer.jsx
 import React from 'react';
-import { Link } from 'react-scroll';
+import { Link } from 'react-scroll'; // Using react-scroll for single-page navigation
 import { FaFacebook, FaLinkedin, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
@@ -14,9 +14,11 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold text-white mb-4">Navigate</h3>
           <ul className="space-y-2">
+            {/* CORRECTED: Added the "Contact" link to the footer navigation */}
             <li><Link to="home" smooth={true} duration={500} className="text-gray-400 hover:text-white cursor-pointer">Home</Link></li>
             <li><Link to="articles" smooth={true} duration={500} offset={-80} className="text-gray-400 hover:text-white cursor-pointer">Articles</Link></li>
             <li><Link to="team" smooth={true} duration={500} offset={-80} className="text-gray-400 hover:text-white cursor-pointer">The Team</Link></li>
+            <li><Link to="contact" smooth={true} duration={500} offset={-80} className="text-gray-400 hover:text-white cursor-pointer">Contact</Link></li> {/* <-- "Contact" is now included */}
           </ul>
         </div>
         <div>

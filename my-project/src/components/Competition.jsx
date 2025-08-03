@@ -18,9 +18,13 @@ const Competition = () => {
   return (
     <section name="competition" className="py-24 bg-[#0A0F19] px-4">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-4">Join Our Launch Competition</h2>
-        <p className="text-lg text-gray-400 mb-12 max-w-3xl mx-auto">This is your moment to shine. We invite students from all faculties across Sri Lanka to share their voice and contribute to a growing community of innovators.</p>
-        
+        <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-4">
+          Join Our Launch Competition
+        </h2>
+        <p className="text-lg text-gray-400 mb-12 max-w-3xl mx-auto">
+          This is your moment to shine. We invite students from all faculties across Sri Lanka to share their voice and contribute to a growing community of innovators.
+        </p>
+
         <div className="grid md:grid-cols-3 gap-8 mb-12 text-left">
           <div className="bg-gray-800/50 p-6 rounded-lg border border-gray-700">
             <FaPencilAlt className="text-3xl text-[#00A39C] mb-4" />
@@ -38,16 +42,16 @@ const Competition = () => {
             <p className="text-gray-400 mt-2">The best submissions during our launch month will be recognized and rewarded.</p>
           </div>
         </div>
-        
+
         {days + hours + minutes + seconds > 0 ? (
           <div className="bg-slate-900 border border-gray-800 p-8 rounded-xl">
-              <h3 className="text-2xl font-bold text-white mb-6">Competition Closes In:</h3>
-              <div className="flex justify-center gap-4 md:gap-8">
-                <CountdownItem value={days} label="Days" />
-                <CountdownItem value={hours} label="Hours" />
-                <CountdownItem value={minutes} label="Minutes" />
-                <CountdownItem value={seconds} label="Seconds" />
-              </div>
+            <h3 className="text-2xl font-bold text-white mb-6">Competition Closes In:</h3>
+            <div className="flex justify-center gap-4 md:gap-8">
+              <CountdownItem value={days} label="Days" />
+              <CountdownItem value={hours} label="Hours" />
+              <CountdownItem value={minutes} label="Minutes" />
+              <CountdownItem value={seconds} label="Seconds" />
+            </div>
           </div>
         ) : (
           <p className="text-2xl text-white mb-12">The competition is live! Submit your articles now.</p>
@@ -56,4 +60,5 @@ const Competition = () => {
     </section>
   );
 };
+
 export default Competition;

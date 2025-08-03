@@ -1,6 +1,6 @@
 // src/components/Navbar.jsx
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-scroll';
+import { Link } from 'react-scroll'; // Using react-scroll for single-page navigation
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
@@ -14,12 +14,14 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // CORRECTED: Added the "Contact" link to this array
   const links = [
     { id: 'home', title: 'Home' },
     { id: 'competition', title: 'Competition' },
     { id: 'articles', title: 'Articles' },
     { id: 'team', title: 'The Team' },
     { id: 'vision', title: 'Our Vision' },
+    { id: 'contact', title: 'Contact' }, // <-- "Contact" is now included
   ];
   
   const activeLinkClass = "text-[#00A39C]";
@@ -35,6 +37,7 @@ const Navbar = () => {
           IAS UWU Blog
         </Link>
         
+        {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8 font-semibold text-gray-300">
           {links.map(link => (
             <Link key={link.id} to={link.id} spy={true} smooth={true} duration={500} offset={-80} activeClass={activeLinkClass} className="hover:text-white cursor-pointer transition-colors">
@@ -48,6 +51,7 @@ const Navbar = () => {
           </Link>
         </div>
 
+        {/* Mobile Hamburger Icon */}
         <div className="md:hidden">
           <button onClick={() => setMobileMenuOpen(true)} className="text-white">
             <FaBars size={24} />
@@ -55,6 +59,7 @@ const Navbar = () => {
         </div>
       </div>
       
+      {/* Mobile Menu */}
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div

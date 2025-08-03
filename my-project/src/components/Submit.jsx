@@ -6,7 +6,7 @@ const Submit = () => {
   const googleFormLink = "https://forms.gle/A5K4WozmuZxkqDzw9";
 
   return (
-    <section name="submit" className="py-24 px-4 bg-white">
+    <section name="submit" className="py-24 px-4 bg-gray-50">
       <motion.div 
         className="max-w-4xl mx-auto bg-gradient-to-r from-[#00A39C] to-[#00629B] rounded-2xl p-12 text-center text-white shadow-2xl"
         initial={{ opacity: 0, y: 100 }}
@@ -30,4 +30,5 @@ const Submit = () => {
     </section>
   );
 };
+
 export default Submit;

@@ -3,7 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const AboutBlog = () => (
-  <section name="about" className="py-24 bg-[#0A0F19] px-4">
+<section name="about" className="py-24 bg-[#1E293B] px-4">
     <div className="max-w-4xl mx-auto text-center">
       <motion.div
         initial={{ opacity: 0, y: 50 }}

@@ -9,6 +9,7 @@ import ArticleFeed from './components/ArticleFeed';
 import Team from './components/Team';
 import Vision from './components/Vision';
 import Submit from './components/Submit';
+import Contact from './components/Contact'; // <-- 1. IMPORT THE NEW COMPONENT
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -23,6 +24,7 @@ function App() {
         <ArticleFeed selectedCategory={selectedCategory} />
         <Team />
         <Vision />
+        <Contact /> {/* <-- 2. ADD THE COMPONENT HERE */}
         <Submit />
       </main>
       <Footer />
