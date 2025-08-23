@@ -9,22 +9,31 @@ import ArticleFeed from './components/ArticleFeed';
 import Team from './components/Team';
 import Vision from './components/Vision';
 import Submit from './components/Submit';
-import Contact from './components/Contact'; // <-- 1. IMPORT THE NEW COMPONENT
 
 function App() {
+  // State is now managed here, at the top level
   const [selectedCategory, setSelectedCategory] = useState('All');
+  const [selectedArticle, setSelectedArticle] = useState(null);
 
   return (
-    <div className="bg-[#030712]">
+    <div className="bg-slate-50">
       <Navbar />
       <main>
         <Hero />
         <Competition />
-        <Categories selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
-        <ArticleFeed selectedCategory={selectedCategory} />
+        {/* Pass the state and setter function to Categories */}
+        <Categories 
+          selectedCategory={selectedCategory} 
+          setSelectedCategory={setSelectedCategory} 
+        />
+        {/* Pass the state and setter function to ArticleFeed */}
+        <ArticleFeed 
+          selectedCategory={selectedCategory} 
+          selectedArticle={selectedArticle} 
+          setSelectedArticle={setSelectedArticle}
+        />
         <Team />
         <Vision />
-        <Contact /> {/* <-- 2. ADD THE COMPONENT HERE */}
         <Submit />
       </main>
       <Footer />
