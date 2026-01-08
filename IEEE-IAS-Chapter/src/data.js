@@ -6,6 +6,7 @@ import fathimaRisnaImg from './assets/images/Members/Risna Sec.png';
 import naveenDilimikaImg from './assets/images/Members/Naveen Tre.png';
 import kishoJeyapragashImg from './assets/images/Members/jp web.png';
 import sayuruBuddhimaImg from './assets/images/Members/Sayaru MD Head.png';
+import poornimaImg from './assets/images/Members/poornima.jpg';
 // Note: You will need to find and add images for the commented-out members
 // import viniduKumarasiriImg from './assets/images/Members/vinidu-kumarasiri.jpg';
 // import tashiyaTishaniImg from './assets/images/Members/tashiya-tishani.jpg';
@@ -26,7 +27,7 @@ export const facultyAdvisorData = {
   name: 'Ms. D.P. Jayathunga',
   title: 'Faculty Advisor, IEEE Student Branch',
   department: 'Department of Computer Science and Informatics',
-  img: 'https://i.pravatar.cc/150?img=53', // Replace with your advisor's actual photo
+  img: poornimaImg, // Local advisor photo
   bio: 'With over 15 years of experience in power systems and renewable energy, our advisor provides invaluable guidance and mentorship, bridging the gap between academic theory and real-world industry application.'
 };
 
